@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Origami</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg z-3 fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand collapse navbar-collapse">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <img src="/images/logo-sm.png" alt="" class="logo-sm">
+                    </div>
+                    <div class="text-uppercase fs-5 text-white fw-bold">Origami</div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <!-- Nav Items -->
+            <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="text-uppercase nav-link text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#modules" class="text-uppercase nav-link text-white">Modules</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#features" class="text-uppercase nav-link text-white">Features</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#about" class="text-uppercase nav-link text-white">About</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#contact" class="text-uppercase nav-link text-white">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#subscribe" class="text-uppercase nav-link text-white">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="offcanvas offcanvas-start d-block d-lg-none bg-menu" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <img src="/images/logo-sm.png" alt="" class="logo-sm">
+                        </div>
+                        <div class="text-uppercase fs-5 text-white fw-bold">Origami</div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-md-none d-block">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white text-uppercase fs-6" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#modules" class="nav-link text-white text-uppercase fs-6">Modules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link text-white text-uppercase fs-6">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link text-white text-uppercase fs-6">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link text-white text-uppercase fs-6">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#subscribe" class="nav-link text-white text-uppercase fs-6">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="form" class="mt-5">
+        <div class="container" class="mt-5">
+            <!-- Header -->
+            <div class="py-5 text-center fw-bold">
+                <h1 class="fs-2 fw-bold">Freemium</h1>
+                <p class="fw-light mt-4 fs-6">Unlock Freemium Features When You Subscribe for Free!</p>
+            </div>
+            <!-- Form -->
+
+            <div class="row  bg-white shadow-sm p-2 rounded-4">
+                <div class="col-12 col-lg-3 form-card rounded-4 py-5 px-4">
+                    <h1 class="text-white fw-semibold">Freemium</h1>
+                    <p class="text-light">Experience It All: Get Started with Freemium. Subscribe for
+                        Free!</p>
+
+                    <div class="mt-4">
+                        <div class="mb-3 d-flex align-items-center">
+                            <div class="me-3 d-flex align-items-center">
+                                <i class="fa fa-check-circle fs-5 text-light"></i>
+                            </div>
+                            <div class="text-light">
+                                Standard Module
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <div class="me-3 d-flex align-items-center">
+                                <i class="fa fa-check-circle fs-5 text-light"></i>
+                            </div>
+                            <div class="text-light">
+                                Core Module
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <div class="me-3 d-flex align-items-center">
+                                <i class="fa fa-check-circle fs-5 text-light"></i>
+                            </div>
+                            <div class="text-light">
+                                Premium Module
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <div class="me-3 d-flex align-items-center">
+                                <i class="fa fa-check-circle fs-5 text-light"></i>
+                            </div>
+                            <div class="text-light">
+                                Multi Tenancy Server
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <div class="me-3 d-flex align-items-center">
+                                <i class="fa fa-check-circle fs-5 text-light"></i>
+                            </div>
+                            <div class="text-light">
+                                Until 2024 Sept 30
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-5">
+                        <a href="#" class="footer-icon d-flex justify-content-center align-content-center">
+                            <i class="fa-brands fa-instagram fs-5"></i>
+                        </a>
+                        <a href="#" class="footer-icon">
+                            <i class="fa-brands fa-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="footer-icon">
+                            <i class="fa-brands fa-twitter fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 mt-5 mt-lg-2">
+                    <div>
+                        <h1 class="form-text-header">Application Form</h1>
+                    </div>
+                    <div class="container">
+                        <div class="accordion" id="accordionExample">
+                            <div class="steps">
+                                <progress id="progress" value=0 max=100></progress>
+                                <div class="step-item">
+                                    <button class="step-button text-center" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        1
+                                    </button>
+                                    <div class="step-title">
+                                        Sequence Number
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <button class="step-button text-center collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        2
+                                    </button>
+                                    <div class="step-title">
+                                        School Information Form
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <button class="step-button text-center collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        3
+                                    </button>
+                                    <div class="step-title">
+                                        Owner Details
+                                    </div>
+                                </div>
+
+                                <div class="step-item">
+                                    <button class="step-button text-center collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        4
+                                    </button>
+                                    <div class="step-title">
+                                        Management Details
+                                    </div>
+                                </div>
+
+                                <div class="step-item">
+                                    <button class="step-button text-center collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        5
+                                    </button>
+                                    <div class="step-title">
+                                        Attachments
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields and
+                                            must not be empty.
+                                        </span>
+                                        <h1 class="fs-5 text-uppercase mt-4 fw-bold">Sequence Number</h1>
+
+                                        <button class="mt-4 termsAndServiceBtn" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">Read Freemium Terms and
+                                            service</button>
+                                        <div class="form-check mt-4 d-flex align-items-center gap-3">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label style="font-size: 13px;" class="form-check-label  "
+                                                for="flexCheckDefault">
+                                                I am the lawful Representative of the Institutions, I hereby Acknowledge
+                                                and fully understand all terms of service in this Freemium Terms of
+                                                service, of Affirm Technology Inc. and expressly waive any and all
+                                                statutory and regulatory provisions governing confidentiality of such
+                                                information, if applicable.
+                                            </label>
+                                        </div>
+                                        <!-- Form -->
+                                        <div class="mt-5">
+                                            <!-- Sequence Number -->
+                                            <div class="mb-3">
+                                                <label for="sequence" class="form-label">Sequence
+                                                    Number</label>
+                                                <input type="number" class="form-control" id="sequence"
+                                                    placeholder="12345">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields and
+                                            must not be empty.
+                                        </span>
+                                        <h1 class="fs-5 text-uppercase mt-4 fw-bold">School Information Form</h1>
+                                        <!-- Form -->
+                                        <div class="mt-5">
+                                            <h1 class="fs-6 text-uppercase mt-4 fw-bold">School Details</h1>
+                                            <div class="row mt-3">
+                                                <!-- School Name -->
+                                                <div class="col">
+                                                    <label for="schoolName" class="form-label">School Name</label>
+                                                    <input type="text" class="form-control" id="schoolName">
+                                                </div>
+                                                <!-- School Acronym -->
+                                                <div class="col">
+                                                    <label for="schoolAcronym" class="form-label">School Acronym
+                                                    </label>
+                                                    <input type="text" class="form-control" id="schoolAcronym">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <!-- School ID -->
+                                                <div class="col">
+                                                    <label for="schoolID" class="form-label">School ID</label>
+                                                    <input type="text" class="form-control" id="schoolID">
+                                                </div>
+                                                <!-- School Address -->
+                                                <div class="col">
+                                                    <label for="schoolAddress" class="form-label">School Address
+                                                    </label>
+                                                    <input type="text" class="form-control" id="schoolAddress">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <!-- Telephone Number -->
+                                                <div class="col-3">
+                                                    <label for="telephoneNumber" class="form-label">Telephone
+                                                        Number</label>
+                                                    <input type="number" class="form-control" id="telephoneNumber">
+                                                </div>
+                                                <!-- Mobile Number -->
+                                                <div class="col-3">
+                                                    <label for="mobileNumber" class="form-label">Mobile Number
+                                                    </label>
+                                                    <input type="number" class="form-control" id="mobileNumber">
+                                                </div>
+                                                <!-- Email -->
+                                                <div class="col-6">
+                                                    <label for="email" class="form-label">School Address
+                                                    </label>
+                                                    <input type="email" class="form-control" id="email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div id="headingThree">
+
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="card-body">
+                                        your content goes here...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div id="headingThree">
+
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="card-body">
+                                        your content goes here...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div id="headingThree">
+
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="card-body">
+                                        your content goes here...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Modal -->
+    <div class="modal modal-lg fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-6" id="staticBackdropLabel">Freemium Terms and Service</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="fs-4 text-center fw-bold mb-4">Freemium Terms and Service</h1>
+                    <p class="fw-semibold fs-5">Introduction</p>
+                    <p>Welcome to Origami</p>
+                    <p>Through both origami-education.com and your school district or your school, Affirm Technology
+                        (collectively “Origami,” “our,” “us, ” or “we”) provides you (“Client / User”) with an online
+                        system and process for information reception and delivery. With the permission of your school,
+                        school district, teacher, or other responsible education authority (the “Customer”), this
+                        information and Site are made available to you, subject to the following Terms of Service and
+                        referenced Privacy Policy (the “Agreements”). By using and accessing this Freemium Service, you
+                        agree to be bound by, and to comply with, these Terms of Service and any other terms and
+                        conditions or terms of service posted on any individual page of this Service.
+                    </p>
+                    <p>The term “Origami” (or “our company”, “we” and “us”) includes Affirm Technology Inc., and all the
+                        subsidiaries and affiliates of Affirm Technology Inc. (hereinafter collectively referred to as
+                        “Origami School Management System” or “Provider”). In order to use the Freemium Service or the
+                        Site, you must obtain access to the World Wide Web, either directly or through devices that
+                        access web-based Information. You must provide all equipment necessary to make such a connection
+                        to the World Wide Web, including a computer and modem or other access device.
+                    </p>
+                    <div>
+                        <p>In addition, you must:</p>
+                        <div class="px-4">
+                            <p>1. Provide true, accurate, current and complete information about yourself as prompted by
+                                the Service’s registration form</p>
+                            <p>2. Maintain and promptly update such registration authorization information to keep it
+                                true, accurate, current and complete.</p>
+                        </div>
+                    </div>
+                    <h1 class="fs-5 fw-bold">Acceptance of Terms</h1>
+                    <p>Origami provides the Service to you subject to the following Freemium Terms of Service, which may
+                        be updated by Origami from time to time without prior notice to you. Unless explicitly stated
+                        otherwise, any new features that augment, change or enhance the current Service, including the
+                        release of new Origami Services, shall be subject to these Terms of Service. You can review the
+                        most current version of the Terms of Service at any time, to which you will be subject from the
+                        date of their publication on the Site.</p>
+                    <p>In addition, when using components of the Service, you and Origami will be subject to any
+                        applicable guidelines or rules that may be posted on this Site from time to time. All such
+                        guidelines or rules are hereby incorporated by reference into these Terms of Service.</p>
+                    <p>By accessing, browsing, and/or using the Service, you as a parent on behalf of your child or
+                        children acknowledge and represent that you have read and understood these Terms of Service, and
+                        that you, as well as your child or children, agree to be bound by the Terms of Service and
+                        comply with all applicable laws and regulations, including those of the Philippines.</p>
+                    <p>You understand and agree that the Service is provided “AS-IS” and that Origami assumes no
+                        responsibility for the timeliness, deletion, mis-delivery or failure to store any user
+                        communications, data or personalization settings. Please review Origami’s “Disclaimer of
+                        Warranties”.</p>
+                    <p>This Freemium Terms and Service governs Client use of Provider’s software and services
+                        (collectively, the “Service”) on a freemium basis. By using the Service, the Client agrees to be
+                        bound by this Agreement.</p>
+
+                    <h1 class="fs-5 fw-bold">1. Definitions</h1>
+                    <p>1.1 “Service” means Provider’s software and services made available to Client on a freemium
+                        basis.</p>
+                    <p>1.2 This Freemium Term of service shall commence upon accepting this Term of Service up to
+                        September 30, 2024.</p>
+                    <p>1.3 “Client Data” means any data, content, or information submitted by Client and its Subscriber
+                        to the Service.</p>
+                    <p>1.4 “Confidential Information” means any non-public information disclosed by either party to the
+                        other party that is designated as confidential or that, given the nature of the information or
+                        circumstances surrounding its disclosure, reasonably should be understood to be confidential.
+                    </p>
+                    <h1 class="fs-5 fw-bold">2. Use of Service</h1>
+                    <p>2.1 Client may use the Service solely for its internal business purposes and in accordance with
+                        this Agreement.</p>
+                    <p>2.2 Client shall not: (a) license, sublicense, sell, resell, transfer, assign, distribute, or
+                        otherwise commercially exploit or make available to any third party, Except for the use of its
+                        Subscriber, the Service or the Content in any way; (b) modify or make derivative works based
+                        upon the Service or the Content; (c) create Internet “links” to the Service or “frame” or
+                        “mirror” any Content on any other server or wireless or Internet-based device; (d) reverse
+                        engineer or access the Service in order to (i) build a competitive product or service, (ii)
+                        build a product using similar ideas, features, functions or graphics of the Service, or (iii)
+                        copy any ideas, features, functions or graphics of the Service; (e) launch an automated program
+                        or script, including, but not limited to, web spiders, web crawlers, web robots, web ants, web
+                        indexers, bots, viruses or worms, or any program which may make multiple server requests per
+                        second, or unduly burden or hinder the operation and/or performance of the Service; (f) use the
+                        Service in violation of any applicable laws or regulations; or (g) use the Service to store or
+                        transmit infringing, libelous, or otherwise unlawful or tortious material, or to store or
+                        transmit material in violation of third-party privacy rights.</p>
+                    <p>2.3 Provider reserves the right to modify, suspend, or discontinue the Service or any part
+                        thereof, with or without notice to Client. Client agrees that Provider will not be liable to
+                        Client or to any third party for any modification, suspension, or discontinuance of the Service.
+                    </p>
+                    <p>2.4 Client will notify the Provider by means of writing and sending to the email address of the
+                        Provider, if the Client wants to continue the use of “Service”.</p>
+                    <p>2.5 Client acknowledges that they can download all gathered data from their users and Subscribers
+                        during the entire length of this agreement.</p>
+                    <p>2.6 Client agreed to the Provider that they can use or put the Client, Logo or name on all of
+                        their marketing collaterals like Social media Platform and on the provider website.</p>
+                    <p>2.7 Client may not charge its users/ students/ parents for the entire free use of the school
+                        management system.</p>
+                    <p>2.8 The Provider will provide the RFID scanner to the client free of charge for the entire
+                        freemium period, and the client is fully aware that they will pay the RFID card per user.</p>
+                    <p>2.9 Client agreed to return the RFID Scanner in good condition once the freemium period ended or
+                        terminated by both parties, any damage, loss of the RFID device will be subjected to a charge by
+                        the provider to the client.</p>
+                    <h1 class="fs-5 fw-bold">3. Intellectual Property</h1>
+                    <p>3.1 Provider retains all right, title, and interest in and to the Service, including all
+                        intellectual property rights therein. Client acknowledges that it is obtaining only a limited
+                        right to use the Service and that irrespective of any use of the words “purchase”, “sale” or
+                        like terms hereunder no ownership rights are being conveyed to Client under this Agreement.</p>
+                    <p>3.2 Client shall not remove or alter any copyright notices, trademarks, or other proprietary
+                        notices on or in the Service.</p>
+                    <p>3.3 Client hereby grants Provider a non-exclusive, worldwide, royalty-free license to use, copy,
+                        store, transmit, and display Client Data solely to the extent necessary to provide the Service
+                        to Client.</p>
+                    <h1 class="fs-5 fw-bold">4. Confidentiality</h1>
+                    <p>4.1 Each party agrees to maintain the confidentiality of the other party’s Confidential
+                        Information and to use such Confidential Information only as necessary to perform its
+                        obligations under this Agreement. Confidential Information shall be protected by the receiving
+                        party with the same degree of care as it uses to protect its own confidential information, but
+                        in no event with less than reasonable care.</p>
+                    <p>4.2 The obligations of confidentiality set forth in this Section 4 shall not apply to any
+                        information that: (a) is or becomes generally known to the public without a breach of any
+                        obligation owed to the disclosing party; (b) was known to the receiving party prior to its
+                        disclosure by the disclosing party without a breach of any obligation owed to the disclosing
+                        party; (c) is received from a third party without a breach of any obligation owed to the
+                        disclosing party; or (d) was independently developed by the receiving party.</p>
+                    <h1 class="fs-5 fw-bold">5. Warranty Disclaimer</h1>
+                    <p>THE SERVICE IS PROVIDED “AS IS” AND PROVIDER DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED,
+                        STATUTORY, OR OTHERWISE, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR
+                        A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. PROVIDER DOES NOT WARRANT THAT THE SERVICE
+                        WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE. CLIENT ACKNOWLEDGES THAT USE OF THE
+                        SERVICE IS AT ITS OWN RISK.</p>
+                    <h1 class="fs-5 fw-bold">6. Limitation of Liability</h1>
+                    <p>IN NO EVENT SHALL PROVIDER BE LIABLE TO CLIENT OR ANY THIRD PARTY FOR ANY INDIRECT, INCIDENTAL,
+                        CONSEQUENTIAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST DATA, PERSONAL INJURY,
+                        OR PROPERTY DAMAGE, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE USE OF THE
+                        SERVICE, WHETHER BASED ON CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE, EVEN IF PROVIDER HAS
+                        BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+                    <h1 class="fs-5 fw-bold">7. Governing Law</h1>
+                    <p>The Agreement and any claims relating to its subject matter will be governed by and construed
+                        under the laws of the Philippines, without reference to its conflicts of law principles. All
+                        disputes shall be subject to the exclusive jurisdiction of the courts of Makati City. Either
+                        party must initiate a cause of action for any claim(s) relating to the Agreement and its subject
+                        matter within one year from the date when the party knew, or should have known after reasonable
+                        investigation of the facts giving rise to the claim(s).</p>
+                    <h1 class="fs-5 fw-bold">8. Entirety of Agreement</h1>
+                    <p>This Agreement constitutes the entire agreement of the parties and supersedes any verbal or
+                        written agreement between the parties. The parties may not modify the Agreement without the
+                        written consent of the other party or their respective authorized representatives.</p>
+                    <h1 class="fs-5 fw-bold">9. Non-Waiver</h1>
+                    <p>The non-enforcement by either party of any provision hereof shall not constitute a waiver of any
+                        other provision/s, or of the same provision/s, of this Contract.</p>
+                    <h1 class="fs-5 fw-bold">10. Separability</h1>
+                    <p>Should any provision of this Agreement be held by a competent court of law as illegal, invalid,
+                        or unenforceable, all other provisions of this Contract not affected by such judicial
+                        declaration of illegality, invalidity, or unenforceability shall remain valid and in full force
+                        and effect.</p>
+                    <h1 class="fs-5 fw-bold">11. Data Privacy</h1>
+                    <p>The Client hereby acknowledges that in performing its obligations under the Agreement, the
+                        Provider will be processing personal information (including sensitive personal information),
+                        which may include that of Client Subscriber's students, employees, officers, agents, parents of
+                        students, and representatives. Further, both parties shall comply with the requirements under
+                        the privacy and data protection laws of the Philippines, and such rules, orders, and regulations
+                        as may be issued by the National Privacy Commission.
+                    </p>
+                    <p>In this regard, the Client shall take the necessary steps to secure all of the personal
+                        information (including sensitive personal information) transmitted to its possession. Hence, it
+                        shall be accountable and liable for any acts, omission, fault, or negligence of that of any of
+                        its personnel, employees, and or agents, who may commit a violation of the provisions of the
+                        Data Privacy Act, and holds the Provider free from all liabilities for such violations.</p>
+                    <p>The client shall not engage any third-party without prior written consent from the Provider,
+                        provided that any such arrangement shall ensure that the same obligations for data protection
+                        under this Agreement are implemented.</p>
+                    <p>Should the client commit any breach in the confidentiality and/or security of the personal
+                        information (including sensitive personal information), the client shall, within twenty-four
+                        (24) hours from the discovery of a breach, contact the proper authority.</p>
+                    <h1 class="fs-5 fw-bold">12. Comprehension and Binding Effect</h1>
+                    <p>The Parties declare that they fully understand the meaning and legal consequences of the
+                        provisions of this Agreement which shall be binding upon the successors-in-interest of Neither
+                        Party.</p>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Decline</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- Bootstrap 5 JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+</script>
+<!-- Stepper JavaScript -->
+<script>
+    const stepButtons = document.querySelectorAll('.step-button');
+    const progress = document.querySelector('#progress');
+
+    Array.from(stepButtons).forEach((button, index) => {
+        button.addEventListener('click', () => {
+            progress.setAttribute('value', index * 100 / (stepButtons.length -
+                1)); //there are 3 buttons. 2 spaces.
+
+            stepButtons.forEach((item, secindex) => {
+                if (index > secindex) {
+                    item.classList.add('done');
+                }
+                if (index < secindex) {
+                    item.classList.remove('done');
+                }
+            })
+        })
+    })
+</script>
+
+</html>
