@@ -186,6 +186,40 @@ body {
   color: white;
 }
 
+/* Custom File Input */
+
+.custom-file-input {
+  color: transparent;
+  cursor: pointer;
+  width: 100px;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: 'Upload';
+  display: inline-block;
+  background: #1976d2;
+  color: #fff;
+  border: 1px solid #1976d2;
+  border-radius: 5px;
+  padding: 8px 16px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.custom-file-input:hover::before {
+  border-color: #0056b3;
+}
+
+.custom-file-input:active::before {
+  background: #0056b3;
+}
+
 /* Stepper */
 
 .steps {

@@ -18,7 +18,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg z-3 fixed-top">
+    <nav class="navbar navbar-expand-lg z-10 fixed-top">
         <div class="container">
             <a href="" class="navbar-brand collapse navbar-collapse">
                 <div class="d-flex align-items-center">
@@ -97,14 +97,14 @@
         <div class="container" class="mt-5">
             <!-- Header -->
             <div class="py-5 text-center fw-bold">
-                <h1 class="fs-2 fw-bold">Freemium</h1>
+                <h1 class="fs-2 fw-semibold">Freemium</h1>
                 <p class="fw-light mt-4 fs-6">Unlock Freemium Features When You Subscribe for Free!</p>
             </div>
             <!-- Form -->
 
             <div class="row  bg-white shadow-sm p-2 rounded-4">
                 <div class="col-12 col-lg-3 form-card rounded-4 py-5 px-4">
-                    <h1 class="text-white fw-semibold">Freemium</h1>
+                    <h1 class="text-white fw-semibold fs-2">Freemium</h1>
                     <p class="text-light">Experience It All: Get Started with Freemium. Subscribe for
                         Free!</p>
 
@@ -270,9 +270,9 @@
                                         <!-- Form -->
                                         <div class="mt-5">
                                             <h1 class="fs-6 text-uppercase mt-4 fw-bold">School Details</h1>
-                                            <div class="row mt-3">
+                                            <div class="row row-cols-1 row-cols-md-2 mt-3">
                                                 <!-- School Name -->
-                                                <div class="col">
+                                                <div class="col mb-3 mb-md-0">
                                                     <label for="schoolName" class="form-label">School Name</label>
                                                     <input type="text" class="form-control" id="schoolName">
                                                 </div>
@@ -283,9 +283,9 @@
                                                     <input type="text" class="form-control" id="schoolAcronym">
                                                 </div>
                                             </div>
-                                            <div class="row mt-3">
+                                            <div class="row row-cols-1 row-cols-md-2 mt-3">
                                                 <!-- School ID -->
-                                                <div class="col">
+                                                <div class="col mb-3 mb-md-0">
                                                     <label for="schoolID" class="form-label">School ID</label>
                                                     <input type="text" class="form-control" id="schoolID">
                                                 </div>
@@ -298,20 +298,20 @@
                                             </div>
                                             <div class="row mt-3">
                                                 <!-- Telephone Number -->
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
                                                     <label for="telephoneNumber" class="form-label">Telephone
                                                         Number</label>
                                                     <input type="number" class="form-control" id="telephoneNumber">
                                                 </div>
                                                 <!-- Mobile Number -->
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
                                                     <label for="mobileNumber" class="form-label">Mobile Number
                                                     </label>
                                                     <input type="number" class="form-control" id="mobileNumber">
                                                 </div>
                                                 <!-- Email -->
-                                                <div class="col-6">
-                                                    <label for="email" class="form-label">School Address
+                                                <div class="col-md-6 col-12">
+                                                    <label for="email" class="form-label">Email
                                                     </label>
                                                     <input type="email" class="form-control" id="email">
                                                 </div>
@@ -321,35 +321,263 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div id="headingThree">
-
-                                </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="card-body">
-                                        your content goes here...
+                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields and
+                                            must not be empty.
+                                        </span>
+                                        <div class="mt-5">
+                                            <h1 class="fs-5 text-uppercase mt-4 fw-bold">Owner Details</h1>
+                                            <div class="row mt-4">
+                                                <!-- First Name -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="firstName" class="form-label">First
+                                                        Name</label>
+                                                    <input type="text" class="form-control" id="firstName">
+                                                </div>
+                                                <!-- Middle Name -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="middleName" class="form-label">Middle
+                                                        Name</label>
+                                                    <input type="text" class="form-control" id="middleName">
+                                                </div>
+                                                <!-- Last Name -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="lastName" class="form-label">Last
+                                                        Name</label>
+                                                    <input type="text" class="form-control" id="lastName">
+                                                </div>
+                                                <!-- Suffix Name -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="suffixName" class="form-label">Suffix
+                                                        Name</label>
+                                                    <select class="form-select" aria-label="" id="suffixName">
+                                                        <option selected>None</option>
+                                                        <option value="1">Jr.</option>
+                                                        <option value="2">Sr.</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <!-- Telephone Number -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="telephoneNumber" class="form-label">Telephone
+                                                        Number</label>
+                                                    <input type="number" class="form-control" id="telephoneNumber">
+                                                </div>
+                                                <!-- Mobile Number -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="mobileNumber" class="form-label">Mobile Number
+                                                    </label>
+                                                    <input type="number" class="form-control" id="mobileNumber">
+                                                </div>
+                                                <!-- Email -->
+                                                <div class="col-md-6 col-12">
+                                                    <label for="ownerEmail" class="form-label">Email
+                                                    </label>
+                                                    <input type="email" class="form-control" id="ownerEmail">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <!-- Position -->
+                                                <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                                    <label for="position" class="form-label">Select
+                                                        Position</label>
+                                                    <select class="form-select" aria-label="" id="position">
+                                                        <option selected>Other Position</option>
+                                                        <option value="1">Position</option>
+                                                        <option value="2">Position</option>
+                                                        <option value="3">Position</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <!-- Other Position -->
+                                                    <label for="otherPosition" class="form-label">Other Position
+                                                    </label>
+                                                    <input type="text" class="form-control" id="otherPosition">
+                                                </div>
+                                            </div>
+
+                                            <h1 class="fs-5 text-uppercase mt-5 fw-bold">School Background</h1>
+                                            <div class="row mt-3">
+                                                <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                                    <!-- Year of Establishment -->
+                                                    <label for="yearOfEstablishment" class="form-label">Year of
+                                                        Establishment
+                                                    </label>
+                                                    <input type="number" class="form-control" id="yearOfEstablishment">
+                                                </div>
+                                                <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                                    <!-- Type of School -->
+                                                    <label for="typeOfSchool" class="form-label">Type of School</label>
+                                                    <select class="form-select" aria-label="" id="typeOfSchool">
+                                                        <option selected>Public</option>
+                                                        <option value="private">Private</option>
+                                                        <option value="public">Public</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-md-4 col-12 mb-3 mb-md-0">
+                                                    <!-- Total No. of Students -->
+                                                    <label for="totalStudents" class="form-label">Total No. of
+                                                        Students
+                                                    </label>
+                                                    <input type="number" class="form-control" id="totalStudents">
+                                                </div>
+                                                <div class="col-md-4 col-12 mb-3 mb-md-0">
+                                                    <!-- Total No. of Teachers -->
+                                                    <label for="totalTeachers" class="form-label">Total No. of
+                                                        Teachers
+                                                    </label>
+                                                    <input type="number" class="form-control" id="totalTeachers">
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <!-- Total No. of Non-Teaching Staff -->
+                                                    <label for="totalNonTeachingStaff" class="form-label">Total No. of
+                                                        Non-Teaching Staff
+                                                    </label>
+                                                    <input type="number" class="form-control"
+                                                        id="totalNonTeachingStaff">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
-                                <div id="headingThree">
-
-                                </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="card-body">
-                                        your content goes here...
+                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields and
+                                            must not be empty.
+                                        </span>
+                                        <h1 class="fs-5 text-uppercase mt-4 fw-bold">Management Details</h1>
+                                        <!-- Form -->
+                                        <div class="mt-5">
+                                            <h1 class="fs-6 text-uppercase mt-4 fw-bold">Principal's Information</h1>
+                                            <div class="row mt-4">
+                                                <!-- First Name -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="principalFirstName" class="form-label">First
+                                                        Name</label>
+                                                    <input type="text" class="form-control" id="principalFirstName">
+                                                </div>
+                                                <!-- Middle Name -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="principalMiddleName" class="form-label">Middle
+                                                        Name</label>
+                                                    <input type="text" class="form-control" id="principalMiddleName">
+                                                </div>
+                                                <!-- Last Name -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="principalLastName" class="form-label">Last
+                                                        Name</label>
+                                                    <input type="text" class="form-control" id="principalLastName">
+                                                </div>
+                                                <!-- Suffix Name -->
+                                                <div class="col-md-3 col-12">
+                                                    <label for="principalSuffixName" class="form-label">Suffix
+                                                        Name</label>
+                                                    <select class="form-select" aria-label="" id="principalSuffixName">
+                                                        <option selected>None</option>
+                                                        <option value="1">Jr.</option>
+                                                        <option value="2">Sr.</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <!-- Telephone Number -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="principalTelephoneNumber" class="form-label">Telephone
+                                                        Number</label>
+                                                    <input type="number" class="form-control"
+                                                        id="principalTelephoneNumber">
+                                                </div>
+                                                <!-- Mobile Number -->
+                                                <div class="col-md-3 col-12 mb-3 mb-md-0">
+                                                    <label for="principalMobileNumber" class="form-label">Mobile Number
+                                                    </label>
+                                                    <input type="number" class="form-control"
+                                                        id="principalMobileNumber">
+                                                </div>
+                                                <!-- Email -->
+                                                <div class="col-md-6 col-12">
+                                                    <label for="principalEmail" class="form-label">Email
+                                                    </label>
+                                                    <input type="email" class="form-control" id="principalEmail">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <!-- Position -->
+                                                <div class="col-md-6 col-12 mb-3 mb-md-0">
+                                                    <label for="principalPosition" class="form-label">Select
+                                                        Position</label>
+                                                    <select class="form-select" aria-label="" id="principalPosition">
+                                                        <option selected>Other Position</option>
+                                                        <option value="1">Position</option>
+                                                        <option value="2">Position</option>
+                                                        <option value="3">Position</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <!-- Other Position -->
+                                                    <label for="principalOtherPosition" class="form-label">Other
+                                                        Position
+                                                    </label>
+                                                    <input type="text" class="form-control" id="principalOtherPosition">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
-                                <div id="headingThree">
-
-                                </div>
                                 <div id="collapseFive" class="collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="card-body">
-                                        your content goes here...
+                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields and
+                                            must not be empty.
+                                        </span>
+                                        <h1 class="fs-5 text-uppercase mt-4 fw-bold">Attachments</h1>
+                                        <div class="mt-4">
+                                            <div class="mb-3 d-flex align-items-center">
+                                                <div>
+                                                    <input type="file" class="custom-file-input" />
+                                                </div>
+                                                <div class="fw-semibold">Business Permit for Sole / Sec Registration for
+                                                    Corporation</div>
+                                            </div>
+                                            <div class="mb-3 d-flex align-items-center">
+                                                <div>
+                                                    <input type="file" class="custom-file-input" />
+                                                </div>
+                                                <div class="fw-semibold">Secretary certificate (Proof lawful Authorize
+                                                    Person)</div>
+                                            </div>
+                                            <div class="mb-3 d-flex align-items-center">
+                                                <div>
+                                                    <input type="file" class="custom-file-input" />
+                                                </div>
+                                                <div class="fw-semibold">DEPED Recognization Certificate</div>
+                                            </div>
+                                            <div class="mb-3 d-flex align-items-center">
+                                                <div>
+                                                    <input type="file" class="custom-file-input" />
+                                                </div>
+                                                <div class="fw-semibold">The Official Logo of School (PNG, JPEG)</div>
+                                            </div>
+                                            <div class="mb-3 d-flex align-items-center">
+                                                <div>
+                                                    <input type="file" class="custom-file-input" />
+                                                </div>
+                                                <div class="fw-semibold">Business Permit for Sole / Sec Registration for
+                                                    Corporation</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -555,27 +783,10 @@
 <!-- Bootstrap 5 JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+
+
 </script>
 <!-- Stepper JavaScript -->
-<script>
-    const stepButtons = document.querySelectorAll('.step-button');
-    const progress = document.querySelector('#progress');
-
-    Array.from(stepButtons).forEach((button, index) => {
-        button.addEventListener('click', () => {
-            progress.setAttribute('value', index * 100 / (stepButtons.length -
-                1)); //there are 3 buttons. 2 spaces.
-
-            stepButtons.forEach((item, secindex) => {
-                if (index > secindex) {
-                    item.classList.add('done');
-                }
-                if (index < secindex) {
-                    item.classList.remove('done');
-                }
-            })
-        })
-    })
-</script>
+<script src="index.js"></script>
 
 </html>
