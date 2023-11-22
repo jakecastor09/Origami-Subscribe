@@ -53,6 +53,7 @@ function validateInputs() {
 function validateInputsOwnerDetails() {
   const btnNext3 = document.querySelector('.btn-owner-details');
 
+  const ownerOtherPosition = document.querySelector('.ownerOtherPosition');
   const ownersFName = document.querySelector('.ownersFName');
   const ownersMName = document.querySelector('.ownersMName');
   const ownersLName = document.querySelector('.ownersLName');
@@ -64,7 +65,7 @@ function validateInputsOwnerDetails() {
   const ownersYearOfEstablishment = document
     .querySelector('.ownersYearOfEstablishment')
     .value.trim();
-
+  const ownersTypeOfSchool = document.querySelector('.ownersTypeOfSchool');
   const ownersTotalStudents = document.querySelector('.ownersTotalStudents');
   const ownersTotalTeachers = document.querySelector('.ownersTotalTeachers');
   const ownersTotalNonTeachingStaff = document.querySelector(
@@ -79,7 +80,17 @@ function validateInputsOwnerDetails() {
   const selectPositionIsValid =
     ownersPosition.options[ownersPosition.selectedIndex].index !== 0;
 
+  const selectTypeOfSchoolIsValid =
+    ownersTypeOfSchool.options[ownersTypeOfSchool.selectedIndex].index !== 0;
+
+  if (ownersPosition.options[ownersPosition.selectedIndex].index === 7) {
+    ownerOtherPosition.disabled = false;
+  } else {
+    ownerOtherPosition.disabled = true;
+  }
+
   if (
+    (isInputNotEmpty(ownerOtherPosition) || ownerOtherPosition.disabled) &&
     isInputNotEmpty(ownersFName) &&
     isInputNotEmpty(ownersMName) &&
     isInputNotEmpty(ownersLName) &&
@@ -87,6 +98,7 @@ function validateInputsOwnerDetails() {
     isInputNotEmpty(ownersTotalTeachers) &&
     isInputNotEmpty(ownersTotalNonTeachingStaff) &&
     selectPositionIsValid &&
+    selectTypeOfSchoolIsValid &&
     isValidYear &&
     isValidNumber &&
     isValidEmail
@@ -101,6 +113,9 @@ function validateInputsOwnerDetails() {
 function validateInputsManagementDetails() {
   const btnNext4 = document.querySelector('.btn-management-details');
 
+  const principalOtherPosition = document.querySelector(
+    '.principalOtherPosition'
+  );
   const principalFName = document.querySelector('.principalFName');
   const principalMName = document.querySelector('.principalMName');
   const principalLName = document.querySelector('.principalLName');
@@ -111,6 +126,12 @@ function validateInputsManagementDetails() {
     .querySelector('.principalMobileNumber')
     .value.trim();
 
+  if (principalPosition.options[principalPosition.selectedIndex].index === 7) {
+    principalOtherPosition.disabled = false;
+  } else {
+    principalOtherPosition.disabled = true;
+  }
+
   const isValidNumber = /^\d{11}$/.test(principalMobileNumber);
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(principalEmail);
 
@@ -119,6 +140,8 @@ function validateInputsManagementDetails() {
     principalPosition.options[principalPosition.selectedIndex].index !== 0;
 
   if (
+    (isInputNotEmpty(principalOtherPosition) ||
+      principalOtherPosition.disabled) &&
     isInputNotEmpty(principalFName) &&
     isInputNotEmpty(principalMName) &&
     isInputNotEmpty(principalLName) &&

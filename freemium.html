@@ -304,7 +304,7 @@
                                                         </path>
                                                     </svg>
                                                     <!-- School Name -->
-                                                    <div class="col mb-3 mb-md-0">
+                                                    <div class="col">
                                                         <div class="input-wrapper">
                                                             <input oninput="validateInputs()"
                                                                 class="input school-name-2" type="text" id="schoolName"
@@ -344,7 +344,7 @@
                                                         </path>
                                                     </svg>
                                                     <!-- School ID -->
-                                                    <div class="col mb-3 mb-md-0">
+                                                    <div class="col">
                                                         <div class="input-wrapper">
                                                             <input oninput="validateInputs()" class="school-id-2 input"
                                                                 type="text" id="schoolID" placeholder="schoolID" />
@@ -434,7 +434,7 @@
                                                 </div>
                                                 <!-- Next Button -->
                                                 <div
-                                                    class="mt-4 form-btn-next__container d-flex justify-content-between">
+                                                    class="mt-4 form-btn-next__container d-flex justify-content-between align-items-center">
                                                     <button id="btnNext" class="form-btn-next gap-2"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                                         aria-expanded="false" aria-controls="collapseOne">
@@ -650,8 +650,9 @@
                                                         </svg>
                                                         <!-- Other Position -->
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="otherPosition"
-                                                                placeholder="otherPosition" />
+                                                            <input oninput="validateInputsOwnerDetails()" disabled
+                                                                class="ownerOtherPosition input" type="text"
+                                                                id="otherPosition" placeholder="otherPosition" />
                                                             <label class="label" for="otherPosition">
                                                                 Other Position*
                                                             </label>
@@ -685,8 +686,9 @@
                                                 <div class="col-md-6 col-12 mb-3 mb-md-0">
                                                     <!-- Type Of School -->
                                                     <div class="input-wrapper">
-                                                        <select class="input" aria-label="Select Type of School"
-                                                            id="typeOfSchool">
+                                                        <select oninput="validateInputsOwnerDetails()"
+                                                            class="ownersTypeOfSchool input"
+                                                            aria-label="Select Type of School" id="typeOfSchool">
                                                             <option selected>Select School Type</option>
                                                             <option value="public">Public</option>
                                                             <option value="private">Private</option>
@@ -765,7 +767,7 @@
                                                 </div>
                                                 <!-- Next Button -->
                                                 <div
-                                                    class="mt-4 form-btn-next__container d-flex justify-content-between">
+                                                    class="mt-4 form-btn-next__container d-flex justify-content-between align-items-center">
                                                     <button id="btnNext" class="form-btn-next gap-2"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                         aria-expanded="false" aria-controls="collapseTwo">
@@ -982,8 +984,9 @@
                                                         </svg>
                                                         <!-- Other Position -->
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="otherPosition"
-                                                                placeholder="otherPosition" />
+                                                            <input oninput="validateInputsManagementDetails()" disabled
+                                                                class="principalOtherPosition input" type="text"
+                                                                id="otherPosition" placeholder="otherPosition" />
                                                             <label class="label" for="otherPosition">
                                                                 Other Position (Pls. Specify)*
                                                             </label>
@@ -993,7 +996,7 @@
                                                 </div>
                                                 <!-- Next Button -->
                                                 <div
-                                                    class="mt-4 form-btn-next__container d-flex justify-content-between">
+                                                    class="mt-4 form-btn-next__container d-flex justify-content-between align-items-center">
                                                     <button id="btnNext" class="form-btn-next gap-2"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                                         aria-expanded="false" aria-controls="collapseThree">
@@ -1063,13 +1066,21 @@
                                                     Corporation</div>
                                             </div>
                                             <!-- Back Button -->
-                                            <div class="mt-4 form-btn-next__container d-flex justify-content-between">
+                                            <div
+                                                class="mt-4 form-btn-next__container d-flex justify-content-between align-items-center">
                                                 <button id="btnNext" class="form-btn-next gap-2"
                                                     data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                                     aria-expanded="false" aria-controls="collapseFour">
                                                     <span><i class="fa-solid fa-arrow-left"></i>
                                                     </span>
                                                     <span>Back</span>
+                                                </button>
+                                                <button type="submit" class="gap-2 form-btn-next">
+                                                    <span>Submit</span>
+                                                    <svg class="icon-submit" focusable="false" aria-hidden="true"
+                                                        viewBox="0 0 24 24" data-testid="SendIcon">
+                                                        <path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"></path>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -1279,9 +1290,11 @@
                 <h1 class="footer-heading">Start your ERP journey today.</h1>
                 <p class="footer-paragraph">Experience Origami's 99% customer support satisfaction shared by thousands
                     of users.</p>
-                <div class="mt-5">
+                <div class="mt-5 d-flex gap-3 justify-content-center">
+                    <a href="#" class="contact-us-btn-outline">Request Demo</a>
                     <a href="#" class="contact-us-btn">Subscribe Now</a>
                 </div>
+
             </div>
 
             <div class="row row-cols-2 row-cols-lg-4 row-gap-5 row-gap-lg-0 mt-5 border-bottom pb-5">
