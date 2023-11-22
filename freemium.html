@@ -233,16 +233,20 @@
 
                                         <button class="mt-4 termsAndServiceBtn" data-bs-toggle="modal"
                                             data-bs-target="#staticBackdrop">Read Freemium Terms and
-                                            service</button>
+                                            service
+                                        </button>
+                                        <!-- Form -->
                                         <div class="form-check mt-4 d-flex align-items-center gap-3">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label style="font-size: 13px;" class="form-check-label  "
-                                                for="flexCheckDefault">
-                                                I am the lawful Representative of the Institutions, I hereby Acknowledge
+                                            <input onchange="validateCheckbox()" class="form-check-input"
+                                                type="checkbox" value="" id="termsAndCondition">
+                                            <label style="font-size: 13px; max-width: 50rem; line-height: 1.7;"
+                                                class="form-check-label  " for="termsAndCondition">
+                                                I am the lawful Representative of the Institutions, I hereby
+                                                Acknowledge
                                                 and fully understand all terms of service in this Freemium Terms of
                                                 service, of Affirm Technology Inc. and expressly waive any and all
-                                                statutory and regulatory provisions governing confidentiality of such
+                                                statutory and regulatory provisions governing confidentiality of
+                                                such
                                                 information, if applicable.
                                             </label>
                                         </div>
@@ -263,6 +267,17 @@
                                                         Sequence Number*
                                                     </label>
                                                 </div>
+
+                                            </div>
+                                            <div class="mt-4 form-btn-next__container d-flex justify-content-end">
+                                                <button disabled id="btnNext"
+                                                    class="form-btn-next gap-2 btn-sequence-number"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    <span>Next</span>
+                                                    <span><i class="fa-solid fa-arrow-right"></i>
+                                                    </span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -290,7 +305,8 @@
                                                     <!-- School Name -->
                                                     <div class="col mb-3 mb-md-0">
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="schoolName"
+                                                            <input oninput="validateInputs()"
+                                                                class="input school-name-2" type="text" id="schoolName"
                                                                 placeholder="schoolName" />
                                                             <label class="label" for="schoolName">
                                                                 School Name*
@@ -308,8 +324,9 @@
                                                     <!-- School Acronym -->
                                                     <div class="col">
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="schoolAcronym"
-                                                                placeholder="schoolAcronym" />
+                                                            <input oninput="validateInputs()"
+                                                                class="school-acronymn-2 input" type="text"
+                                                                id="schoolAcronym" placeholder="schoolAcronym" />
                                                             <label class="label" for="schoolAcronym">
                                                                 School Acronym*
                                                             </label>
@@ -328,8 +345,8 @@
                                                     <!-- School ID -->
                                                     <div class="col mb-3 mb-md-0">
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="schoolID"
-                                                                placeholder="schoolID" />
+                                                            <input oninput="validateInputs()" class="school-id-2 input"
+                                                                type="text" id="schoolID" placeholder="schoolID" />
                                                             <label class="label" for="schoolID">
                                                                 School ID*
                                                             </label>
@@ -346,8 +363,9 @@
                                                     <!-- School Address -->
                                                     <div class="col">
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="schoolAddress"
-                                                                placeholder="schoolAddress" />
+                                                            <input oninput="validateInputs()"
+                                                                class="school-address-2 input" type="text"
+                                                                id="schoolAddress" placeholder="schoolAddress" />
                                                             <label class="label" for="schoolAddress">
                                                                 School Address*
                                                             </label>
@@ -386,8 +404,9 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="number" id="mobileNumber"
-                                                                placeholder="mobileNumber" />
+                                                            <input oninput="validateInputs()"
+                                                                class="input mobile-number-2" type="number"
+                                                                id="mobileNumber" placeholder="mobileNumber" />
                                                             <label class="label" for="mobileNumber">
                                                                 Mobile Number*
                                                             </label>
@@ -404,13 +423,24 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="email" id="email"
-                                                                placeholder="email" />
+                                                            <input oninput="validateInputs()" class="email-2 input"
+                                                                type="email" id="email" placeholder="email" />
                                                             <label class="label" for="email">
                                                                 Email*
                                                             </label>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <!-- Next Button -->
+                                                <div class="mt-4 form-btn-next__container d-flex justify-content-end">
+                                                    <button disabled id="btnNext"
+                                                        class="btn-school-information form-btn-next gap-2"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        <span>Next</span>
+                                                        <span><i class="fa-solid fa-arrow-right"></i>
+                                                        </span>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -709,6 +739,18 @@
                                                                 Non-Teaching Staff*
                                                             </label>
                                                         </div>
+
+                                                    </div>
+                                                    <!-- Next Button -->
+                                                    <div
+                                                        class="mt-4 form-btn-next__container d-flex justify-content-end">
+                                                        <button id="btnNext" class="form-btn-next gap-2"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                            aria-expanded="false" aria-controls="collapseFour">
+                                                            <span>Next</span>
+                                                            <span><i class="fa-solid fa-arrow-right"></i>
+                                                            </span>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -911,6 +953,18 @@
                                                                 Other Position (Pls. Specify)*
                                                             </label>
                                                         </div>
+
+                                                    </div>
+                                                    <!-- Next Button -->
+                                                    <div
+                                                        class="mt-4 form-btn-next__container d-flex justify-content-end">
+                                                        <button id="btnNext" class="form-btn-next gap-2"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                            aria-expanded="false" aria-controls="collapseFive">
+                                                            <span>Next</span>
+                                                            <span><i class="fa-solid fa-arrow-right"></i>
+                                                            </span>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
