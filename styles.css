@@ -189,8 +189,8 @@ body {
   fill: #0d9fdd;
 }
 .input-icon {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   align-self: flex-end;
   margin-bottom: 2px;
 }
@@ -236,6 +236,7 @@ body {
   pointer-events: none;
   transform-origin: left center;
   transition: transform 250ms;
+  font-size: 14px;
 }
 
 .input:focus + .label,
@@ -258,7 +259,7 @@ body {
 }
 
 .custom-file-input::before {
-  content: 'Upload';
+  content: 'UPLOAD';
   display: inline-block;
   background: #1976d2;
   color: #fff;
@@ -269,6 +270,7 @@ body {
   white-space: nowrap;
   cursor: pointer;
   font-weight: 500;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .custom-file-input:hover::before {
@@ -361,8 +363,14 @@ body {
   color: white;
   font-size: 14px;
   transition: all 0.3s;
+  margin-top: 16px;
 
-  &:hover {
+  &:disabled {
+    background-color: #e0e0e0;
+    color: #a6a6a6;
+  }
+
+  &:not([disabled]):hover {
     background-color: #05b8f0;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
       0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
@@ -370,4 +378,14 @@ body {
 }
 .form-btn-next__container {
   margin-bottom: 98px;
+}
+
+.custom-container {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card {
+  border: none;
 }

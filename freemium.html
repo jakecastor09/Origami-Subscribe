@@ -94,7 +94,7 @@
     </nav>
 
     <section id="form" class="my-5">
-        <div class="container" class="mt-5">
+        <div class="container custom-container" class="mt-5">
             <!-- Header -->
             <div class="py-5 text-center fw-bold">
                 <h1 class="fs-2 fw-semibold">Freemium</h1>
@@ -166,13 +166,14 @@
                     <div>
                         <h1 class="form-text-header">Application Form</h1>
                     </div>
-                    <div class="container">
+                    <div class="container custom-container">
                         <div class="accordion" id="accordionExample">
                             <div class="steps">
                                 <progress id="progress" value=0 max=100></progress>
                                 <div class="step-item">
-                                    <button class="step-button text-center" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button disabled class="step-button text-center" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
                                         1
                                     </button>
                                     <div class="step-title">
@@ -180,7 +181,7 @@
                                     </div>
                                 </div>
                                 <div class="step-item">
-                                    <button class="step-button text-center collapsed" type="button"
+                                    <button disabled class="step-button text-center collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
                                         2
@@ -190,7 +191,7 @@
                                     </div>
                                 </div>
                                 <div class="step-item">
-                                    <button class="step-button text-center collapsed" type="button"
+                                    <button disabled class="step-button text-center collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
                                         3
@@ -201,7 +202,7 @@
                                 </div>
 
                                 <div class="step-item">
-                                    <button class="step-button text-center collapsed" type="button"
+                                    <button disabled class="step-button text-center collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                         aria-controls="collapseFour">
                                         4
@@ -212,7 +213,7 @@
                                 </div>
 
                                 <div class="step-item">
-                                    <button class="step-button text-center collapsed" type="button"
+                                    <button disabled class="step-button text-center collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                         aria-controls="collapseFive">
                                         5
@@ -334,7 +335,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row row-cols-1 row-cols-md-2 mt-3">
+                                            <div class="row row-cols-1 row-cols-md-2 ">
                                                 <div class="d-flex gap-2 mb-4">
                                                     <svg class="input-icon" focusable="false" aria-hidden="true"
                                                         viewBox="0 0 24 24" data-testid="AssuredWorkloadIcon">
@@ -373,7 +374,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row mt-3">
+                                            <div class="row ">
                                                 <!-- Telephone Number -->
                                                 <div class="col-md-3 col-12 mb-3 mb-md-0">
                                                     <div class="d-flex gap-2 mb-4">
@@ -432,7 +433,15 @@
                                                     </div>
                                                 </div>
                                                 <!-- Next Button -->
-                                                <div class="mt-4 form-btn-next__container d-flex justify-content-end">
+                                                <div
+                                                    class="mt-4 form-btn-next__container d-flex justify-content-between">
+                                                    <button id="btnNext" class="form-btn-next gap-2"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        <span><i class="fa-solid fa-arrow-left"></i>
+                                                        </span>
+                                                        <span>Back</span>
+                                                    </button>
                                                     <button disabled id="btnNext"
                                                         class="btn-school-information form-btn-next gap-2"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseThree"
@@ -541,7 +550,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row mt-3">
+                                            <div class="row">
                                                 <!-- Telephone Number -->
                                                 <div class="col-md-3 col-12 mb-3 mb-md-0">
                                                     <div class="d-flex gap-2 mb-4">
@@ -601,7 +610,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row mt-3">
+                                            <div class="row ">
                                                 <!-- Position -->
                                                 <div class="col-md-6 col-12 mb-3 mb-md-0">
                                                     <div class="d-flex gap-2 mb-4">
@@ -651,7 +660,7 @@
                                                 </div>
                                             </div>
 
-                                            <h1 class="fs-5 text-uppercase mt-5 fw-bold">School Background</h1>
+                                            <h1 class="fs-5 text-uppercase mt-3 fw-bold">School Background</h1>
                                             <div class="row mt-3">
                                                 <div class="col-md-6 col-12 mb-3 mb-md-0">
                                                     <div class="d-flex gap-2 mb-4">
@@ -688,7 +697,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row mt-3">
+                                            <div class="row ">
                                                 <div class="col-md-4 col-12 mb-3 mb-md-0">
                                                     <div class="d-flex gap-2 mb-4">
                                                         <svg class="input-icon" focusable="false" aria-hidden="true"
@@ -752,18 +761,26 @@
                                                         </div>
 
                                                     </div>
-                                                    <!-- Next Button -->
-                                                    <div
-                                                        class="mt-4 form-btn-next__container d-flex justify-content-end">
-                                                        <button disabled id="btnNext"
-                                                            class="btn-owner-details form-btn-next gap-2"
-                                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                                            aria-expanded="false" aria-controls="collapseFour">
-                                                            <span>Next</span>
-                                                            <span><i class="fa-solid fa-arrow-right"></i>
-                                                            </span>
-                                                        </button>
-                                                    </div>
+
+                                                </div>
+                                                <!-- Next Button -->
+                                                <div
+                                                    class="mt-4 form-btn-next__container d-flex justify-content-between">
+                                                    <button id="btnNext" class="form-btn-next gap-2"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        <span><i class="fa-solid fa-arrow-left"></i>
+                                                        </span>
+                                                        <span>Back</span>
+                                                    </button>
+                                                    <button disabled id="btnNext"
+                                                        class="btn-owner-details form-btn-next gap-2"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                        aria-expanded="false" aria-controls="collapseFour">
+                                                        <span>Next</span>
+                                                        <span><i class="fa-solid fa-arrow-right"></i>
+                                                        </span>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -865,7 +882,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row mt-3">
+                                            <div class="row mt-2">
                                                 <!-- Telephone Number -->
                                                 <div class="col-md-3 col-12 mb-3 mb-md-0">
                                                     <div class="d-flex gap-2 mb-4">
@@ -925,7 +942,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row mt-3">
+                                            <div class="row mt-2">
                                                 <!-- Position -->
                                                 <div class="col-md-6 col-12 mb-3 mb-md-0">
                                                     <div class="d-flex gap-2 mb-4">
@@ -973,18 +990,25 @@
                                                         </div>
 
                                                     </div>
-                                                    <!-- Next Button -->
-                                                    <div
-                                                        class="mt-4 form-btn-next__container d-flex justify-content-end">
-                                                        <button disabled id="btnNext"
-                                                            class="btn-management-details form-btn-next gap-2"
-                                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                                            aria-expanded="false" aria-controls="collapseFive">
-                                                            <span>Next</span>
-                                                            <span><i class="fa-solid fa-arrow-right"></i>
-                                                            </span>
-                                                        </button>
-                                                    </div>
+                                                </div>
+                                                <!-- Next Button -->
+                                                <div
+                                                    class="mt-4 form-btn-next__container d-flex justify-content-between">
+                                                    <button id="btnNext" class="form-btn-next gap-2"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        <span><i class="fa-solid fa-arrow-left"></i>
+                                                        </span>
+                                                        <span>Back</span>
+                                                    </button>
+                                                    <button disabled id="btnNext"
+                                                        class="btn-management-details form-btn-next gap-2"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                        aria-expanded="false" aria-controls="collapseFive">
+                                                        <span>Next</span>
+                                                        <span><i class="fa-solid fa-arrow-right"></i>
+                                                        </span>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1038,6 +1062,16 @@
                                                     for
                                                     Corporation</div>
                                             </div>
+                                            <!-- Back Button -->
+                                            <div class="mt-4 form-btn-next__container d-flex justify-content-between">
+                                                <button id="btnNext" class="form-btn-next gap-2"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                    aria-expanded="false" aria-controls="collapseFour">
+                                                    <span><i class="fa-solid fa-arrow-left"></i>
+                                                    </span>
+                                                    <span>Back</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1045,7 +1079,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
     </section>
 
@@ -1233,14 +1266,15 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Decline</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+                        <button type="button" class="checkButton btn btn-primary"
+                            data-bs-dismiss="modal">Accept</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <footer id="footer">
-        <div class="container py-5">
+        <div class="container custom-container py-5">
             <div class="text-center text-white pb-5">
                 <h1 class="footer-heading">Start your ERP journey today.</h1>
                 <p class="footer-paragraph">Experience Origami's 99% customer support satisfaction shared by thousands

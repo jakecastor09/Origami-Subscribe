@@ -1,32 +1,22 @@
 'use strict';
 
-const stepButtons = document.querySelectorAll('.step-button');
-const progress = document.querySelector('#progress');
-
-// Array.from(stepButtons).forEach((button, index) => {
-//   button.addEventListener('click', () => {
-//     progress.setAttribute('value', (index * 100) / (stepButtons.length - 1.2));
-//     stepButtons.forEach((item, secindex) => {
-//       if (index > secindex) {
-//         item.classList.add('done');
-//       }
-//       if (index < secindex) {
-//         item.classList.remove('done');
-//       }
-//     });
-//   });
-// });
-
-function isInputValid(inputField) {
+function isInputNotEmpty(inputField) {
   return inputField.value.trim() !== '';
 }
 
 // Validation
 
 // Sequence Number Form 1
+const checkButton = document.querySelector('.checkButton');
+const checkbox = document.querySelector('.form-check-input');
+
+checkButton.addEventListener('click', function () {
+  checkbox.checked = true;
+  validateCheckbox();
+});
+
 function validateCheckbox() {
   const btnNext1 = document.querySelector('.btn-sequence-number');
-  const checkbox = document.querySelector('.form-check-input');
   btnNext1.disabled = !checkbox.checked;
 }
 
@@ -46,10 +36,10 @@ function validateInputs() {
   const isValidNumber = /^\d{11}$/.test(schoolInfoMobileNumber);
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(schoolInfoEmail);
   if (
-    isInputValid(schoolInfoName) &&
-    isInputValid(schoolInfoAcronymn) &&
-    isInputValid(schoolInfoID) &&
-    isInputValid(schoolInfoAddress) &&
+    isInputNotEmpty(schoolInfoName) &&
+    isInputNotEmpty(schoolInfoAcronymn) &&
+    isInputNotEmpty(schoolInfoID) &&
+    isInputNotEmpty(schoolInfoAddress) &&
     isValidNumber &&
     isValidEmail
   ) {
@@ -90,12 +80,12 @@ function validateInputsOwnerDetails() {
     ownersPosition.options[ownersPosition.selectedIndex].index !== 0;
 
   if (
-    isInputValid(ownersFName) &&
-    isInputValid(ownersMName) &&
-    isInputValid(ownersLName) &&
-    isInputValid(ownersTotalStudents) &&
-    isInputValid(ownersTotalTeachers) &&
-    isInputValid(ownersTotalNonTeachingStaff) &&
+    isInputNotEmpty(ownersFName) &&
+    isInputNotEmpty(ownersMName) &&
+    isInputNotEmpty(ownersLName) &&
+    isInputNotEmpty(ownersTotalStudents) &&
+    isInputNotEmpty(ownersTotalTeachers) &&
+    isInputNotEmpty(ownersTotalNonTeachingStaff) &&
     selectPositionIsValid &&
     isValidYear &&
     isValidNumber &&
@@ -107,7 +97,7 @@ function validateInputsOwnerDetails() {
   }
 }
 
-// Management Details Form4
+// Management Details Form 4
 function validateInputsManagementDetails() {
   const btnNext4 = document.querySelector('.btn-management-details');
 
@@ -129,9 +119,9 @@ function validateInputsManagementDetails() {
     principalPosition.options[principalPosition.selectedIndex].index !== 0;
 
   if (
-    isInputValid(principalFName) &&
-    isInputValid(principalMName) &&
-    isInputValid(principalLName) &&
+    isInputNotEmpty(principalFName) &&
+    isInputNotEmpty(principalMName) &&
+    isInputNotEmpty(principalLName) &&
     selectPositionIsValid &&
     isValidEmail &&
     isValidNumber
