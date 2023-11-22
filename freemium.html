@@ -249,11 +249,20 @@
                                         <!-- Form -->
                                         <div class="mt-5">
                                             <!-- Sequence Number -->
-                                            <div class="mb-3">
-                                                <label for="sequence" class="form-label">Sequence
-                                                    Number</label>
-                                                <input type="number" class="form-control" id="sequence"
-                                                    placeholder="12345">
+                                            <div class="d-flex mb-4 gap-2">
+                                                <svg class="input-icon" focusable="false" aria-hidden="true"
+                                                    viewBox="0 0 24 24" data-testid="PinIcon">
+                                                    <path
+                                                        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.64 15H6.49v-4.5l-.9.66-.58-.89L6.77 9h.87v6zm5.86 0H9.61v-1.02c1.07-1.07 1.77-1.77 2.13-2.15.4-.42.54-.69.54-1.06 0-.4-.31-.72-.81-.72-.52 0-.8.39-.9.72l-1.01-.42c.01-.02.18-.76 1-1.15.69-.33 1.48-.2 1.95.03.86.44.91 1.24.91 1.48 0 .64-.31 1.26-.92 1.86-.25.25-.72.71-1.4 1.39l.03.05h2.37V15zm5.25-.85c-.08.13-.56.85-1.76.85-.04 0-1.6.08-2.05-1.51l1.03-.41c.03.1.19.86 1.02.86.41 0 .89-.28.89-.77 0-.55-.48-.79-1.04-.79h-.5v-1h.46c.33 0 .88-.14.88-.72 0-.39-.31-.65-.75-.65-.5 0-.74.32-.85.64l-.99-.41C15.2 9.9 15.68 9 16.94 9c1.09 0 1.54.64 1.62.75.33.5.28 1.16.02 1.57-.15.22-.32.38-.52.48v.07c.28.11.51.28.68.52.37.52.33 1.27.01 1.76z">
+                                                    </path>
+                                                </svg>
+                                                <div class="input-wrapper">
+                                                    <input class="input" type="number" id="sequence"
+                                                        placeholder="sequence" />
+                                                    <label class="label" for="sequence">
+                                                        Sequence Number
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -270,50 +279,138 @@
                                         <!-- Form -->
                                         <div class="mt-5">
                                             <h1 class="fs-6 text-uppercase mt-4 fw-bold">School Details</h1>
-                                            <div class="row row-cols-1 row-cols-md-2 mt-3">
-                                                <!-- School Name -->
-                                                <div class="col mb-3 mb-md-0">
-                                                    <label for="schoolName" class="form-label">School Name</label>
-                                                    <input type="text" class="form-control" id="schoolName">
+                                            <div class="row row-cols-1 row-cols-md-2 mt-4">
+                                                <div class="d-flex gap-2 mb-4">
+                                                    <svg class="input-icon" focusable="false" aria-hidden="true"
+                                                        viewBox="0 0 24 24" data-testid="SchoolIcon">
+                                                        <path
+                                                            d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z">
+                                                        </path>
+                                                    </svg>
+                                                    <!-- School Name -->
+                                                    <div class="col mb-3 mb-md-0">
+                                                        <div class="input-wrapper">
+                                                            <input class="input" type="text" id="schoolName"
+                                                                placeholder="schoolName" />
+                                                            <label class="label" for="schoolName">
+                                                                School Name
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <!-- School Acronym -->
-                                                <div class="col">
-                                                    <label for="schoolAcronym" class="form-label">School Acronym
-                                                    </label>
-                                                    <input type="text" class="form-control" id="schoolAcronym">
+                                                <div class="d-flex gap-2 mb-4">
+                                                    <svg class="input-icon" focusable="false" aria-hidden="true"
+                                                        viewBox="0 0 24 24" data-testid="SchoolIcon">
+                                                        <path
+                                                            d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z">
+                                                        </path>
+                                                    </svg>
+                                                    <!-- School Acronym -->
+                                                    <div class="col">
+                                                        <div class="input-wrapper">
+                                                            <input class="input" type="text" id="schoolAcronym"
+                                                                placeholder="schoolAcronym" />
+                                                            <label class="label" for="schoolAcronym">
+                                                                School Acronym
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row row-cols-1 row-cols-md-2 mt-3">
-                                                <!-- School ID -->
-                                                <div class="col mb-3 mb-md-0">
-                                                    <label for="schoolID" class="form-label">School ID</label>
-                                                    <input type="text" class="form-control" id="schoolID">
+                                                <div class="d-flex gap-2 mb-4">
+                                                    <svg class="input-icon" focusable="false" aria-hidden="true"
+                                                        viewBox="0 0 24 24" data-testid="AssuredWorkloadIcon">
+                                                        <path
+                                                            d="M5 10h2v7H5zm6 0h2v7h-2zm11-4L12 1 2 6v2h20zM2 19v2h12.4c-.21-.64-.32-1.31-.36-2H2zm17-6.74V10h-2v3.26zM20 14l-4 2v2.55c0 2.52 1.71 4.88 4 5.45 2.29-.57 4-2.93 4-5.45V16l-4-2zm-.72 7-2.03-2.03 1.06-1.06.97.97 2.41-2.38 1.06 1.06L19.28 21z">
+                                                        </path>
+                                                    </svg>
+                                                    <!-- School ID -->
+                                                    <div class="col mb-3 mb-md-0">
+                                                        <div class="input-wrapper">
+                                                            <input class="input" type="text" id="schoolID"
+                                                                placeholder="schoolID" />
+                                                            <label class="label" for="schoolID">
+                                                                School ID
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <!-- School Address -->
-                                                <div class="col">
-                                                    <label for="schoolAddress" class="form-label">School Address
-                                                    </label>
-                                                    <input type="text" class="form-control" id="schoolAddress">
+                                                <div class="d-flex gap-2 mb-4">
+                                                    <svg class="input-icon" focusable="false" aria-hidden="true"
+                                                        viewBox="0 0 24 24" data-testid="LocationOnIcon">
+                                                        <path
+                                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                                                        </path>
+                                                    </svg>
+                                                    <!-- School Address -->
+                                                    <div class="col">
+                                                        <div class="input-wrapper">
+                                                            <input class="input" type="text" id="schoolAddress"
+                                                                placeholder="schoolAddress" />
+                                                            <label class="label" for="schoolAddress">
+                                                                School Address
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row mt-3">
                                                 <!-- Telephone Number -->
                                                 <div class="col-md-3 col-12 mb-3 mb-md-0">
-                                                    <label for="telephoneNumber" class="form-label">Telephone
-                                                        Number</label>
-                                                    <input type="number" class="form-control" id="telephoneNumber">
+                                                    <div class="d-flex gap-2 mb-4">
+                                                        <svg class="input-icon" focusable="false" aria-hidden="true"
+                                                            viewBox="0 0 24 24" data-testid="PhoneIcon">
+                                                            <path
+                                                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z">
+                                                            </path>
+                                                        </svg>
+                                                        <div class="input-wrapper">
+                                                            <input class="input" type="number" id="telephoneNumber"
+                                                                placeholder="telephoneNumber" />
+                                                            <label class="label" for="telephoneNumber">
+                                                                Telephone
+                                                                Number
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                                 <!-- Mobile Number -->
                                                 <div class="col-md-3 col-12 mb-3 mb-md-0">
-                                                    <label for="mobileNumber" class="form-label">Mobile Number
-                                                    </label>
-                                                    <input type="number" class="form-control" id="mobileNumber">
+                                                    <div class="d-flex gap-2 mb-4">
+                                                        <svg class="input-icon" focusable="false" aria-hidden="true"
+                                                            viewBox="0 0 24 24" data-testid="PhoneIphoneIcon">
+                                                            <path
+                                                                d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z">
+                                                            </path>
+                                                        </svg>
+                                                        <div class="input-wrapper">
+                                                            <input class="input" type="number" id="mobileNumber"
+                                                                placeholder="mobileNumber" />
+                                                            <label class="label" for="mobileNumber">
+                                                                Mobile Number
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <!-- Email -->
                                                 <div class="col-md-6 col-12">
-                                                    <label for="email" class="form-label">Email
-                                                    </label>
-                                                    <input type="email" class="form-control" id="email">
+                                                    <div class="d-flex gap-2 mb-4">
+                                                        <svg class="input-icon" focusable="false" aria-hidden="true"
+                                                            viewBox="0 0 24 24" data-testid="EmailIcon">
+                                                            <path
+                                                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z">
+                                                            </path>
+                                                        </svg>
+                                                        <div class="input-wrapper">
+                                                            <input class="input" type="email" id="email"
+                                                                placeholder="email" />
+                                                            <label class="label" for="email">
+                                                                Email
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -324,7 +421,8 @@
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="card-body">
-                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields and
+                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields
+                                            and
                                             must not be empty.
                                         </span>
                                         <div class="mt-5">
@@ -411,7 +509,8 @@
                                                 </div>
                                                 <div class="col-md-6 col-12 mb-3 mb-md-0">
                                                     <!-- Type of School -->
-                                                    <label for="typeOfSchool" class="form-label">Type of School</label>
+                                                    <label for="typeOfSchool" class="form-label">Type of
+                                                        School</label>
                                                     <select class="form-select" aria-label="" id="typeOfSchool">
                                                         <option selected>Public</option>
                                                         <option value="private">Private</option>
@@ -436,7 +535,8 @@
                                                 </div>
                                                 <div class="col-md-4 col-12">
                                                     <!-- Total No. of Non-Teaching Staff -->
-                                                    <label for="totalNonTeachingStaff" class="form-label">Total No. of
+                                                    <label for="totalNonTeachingStaff" class="form-label">Total No.
+                                                        of
                                                         Non-Teaching Staff
                                                     </label>
                                                     <input type="number" class="form-control"
@@ -451,13 +551,15 @@
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="card-body">
-                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields and
+                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields
+                                            and
                                             must not be empty.
                                         </span>
                                         <h1 class="fs-5 text-uppercase mt-4 fw-bold">Management Details</h1>
                                         <!-- Form -->
                                         <div class="mt-5">
-                                            <h1 class="fs-6 text-uppercase mt-4 fw-bold">Principal's Information</h1>
+                                            <h1 class="fs-6 text-uppercase mt-4 fw-bold">Principal's Information
+                                            </h1>
                                             <div class="row mt-4">
                                                 <!-- First Name -->
                                                 <div class="col-md-3 col-12 mb-3 mb-md-0">
@@ -499,16 +601,23 @@
                                                 </div>
                                                 <!-- Mobile Number -->
                                                 <div class="col-md-3 col-12 mb-3 mb-md-0">
-                                                    <label for="principalMobileNumber" class="form-label">Mobile Number
-                                                    </label>
-                                                    <input type="number" class="form-control"
-                                                        id="principalMobileNumber">
+                                                    <div class="input-wrapper">
+                                                        <input class="input" type="number" id="principalMobileNumber"
+                                                            placeholder="Mobile Number" />
+                                                        <label class="label" for="principalMobileNumber">
+                                                            Mobile Number
+                                                        </label>
+                                                    </div>
                                                 </div>
                                                 <!-- Email -->
                                                 <div class="col-md-6 col-12">
-                                                    <label for="principalEmail" class="form-label">Email
-                                                    </label>
-                                                    <input type="email" class="form-control" id="principalEmail">
+                                                    <div class="input-wrapper">
+                                                        <input class="input" type="email" id="principalEmail"
+                                                            placeholder="Other Position" />
+                                                        <label class="label" for="principalEmail">
+                                                            Email
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row mt-3">
@@ -523,12 +632,15 @@
                                                         <option value="3">Position</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-md-6 col-12">
+                                                <div class="col-md-6 col-12 form-floating">
                                                     <!-- Other Position -->
-                                                    <label for="principalOtherPosition" class="form-label">Other
-                                                        Position
-                                                    </label>
-                                                    <input type="text" class="form-control" id="principalOtherPosition">
+                                                    <div class="input-wrapper">
+                                                        <input class="input" type="text" id="principalOtherPosition"
+                                                            placeholder="Other Position" />
+                                                        <label class="label" for="principalOtherPosition">
+                                                            Other Position *
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -539,7 +651,8 @@
                                 <div id="collapseFive" class="collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="card-body">
-                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields and
+                                        <span class="requiredText">Note: Fields with asterisk(*) are required fields
+                                            and
                                             must not be empty.
                                         </span>
                                         <h1 class="fs-5 text-uppercase mt-4 fw-bold">Attachments</h1>
@@ -548,14 +661,16 @@
                                                 <div>
                                                     <input type="file" class="custom-file-input" />
                                                 </div>
-                                                <div class="fw-semibold">Business Permit for Sole / Sec Registration for
+                                                <div class="fw-semibold">Business Permit for Sole / Sec Registration
+                                                    for
                                                     Corporation</div>
                                             </div>
                                             <div class="mb-3 d-flex align-items-center">
                                                 <div>
                                                     <input type="file" class="custom-file-input" />
                                                 </div>
-                                                <div class="fw-semibold">Secretary certificate (Proof lawful Authorize
+                                                <div class="fw-semibold">Secretary certificate (Proof lawful
+                                                    Authorize
                                                     Person)</div>
                                             </div>
                                             <div class="mb-3 d-flex align-items-center">
@@ -568,13 +683,15 @@
                                                 <div>
                                                     <input type="file" class="custom-file-input" />
                                                 </div>
-                                                <div class="fw-semibold">The Official Logo of School (PNG, JPEG)</div>
+                                                <div class="fw-semibold">The Official Logo of School (PNG, JPEG)
+                                                </div>
                                             </div>
                                             <div class="mb-3 d-flex align-items-center">
                                                 <div>
                                                     <input type="file" class="custom-file-input" />
                                                 </div>
-                                                <div class="fw-semibold">Business Permit for Sole / Sec Registration for
+                                                <div class="fw-semibold">Business Permit for Sole / Sec Registration
+                                                    for
                                                     Corporation</div>
                                             </div>
                                         </div>

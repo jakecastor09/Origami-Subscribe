@@ -185,6 +185,65 @@ body {
   border: none;
   color: white;
 }
+.input-icon path {
+  fill: #0d9fdd;
+}
+.input-icon {
+  width: 25px;
+  height: 25px;
+  align-self: flex-end;
+  margin-bottom: 2px;
+}
+
+/* Custom Input */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 0;
+  padding-right: 30px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  transition: border-color 250ms;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+    border-bottom-color: #1976d2;
+  }
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+  }
+}
+
+.label {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: #9c9c9c;
+  pointer-events: none;
+  transform-origin: left center;
+  transition: transform 250ms;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+  transform: translateY(-100%) scale(0.75);
+  color: #1976d2;
+  padding: 8px 0;
+}
 
 /* Custom File Input */
 
