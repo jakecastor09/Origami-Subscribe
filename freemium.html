@@ -470,7 +470,8 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="firstName"
+                                                            <input oninput="validateInputsOwnerDetails()"
+                                                                class="ownersFName input" type="text" id="firstName"
                                                                 placeholder="firstName" />
                                                             <label class="label" for="firstName">
                                                                 First Name*
@@ -488,7 +489,8 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="middleName"
+                                                            <input oninput="validateInputsOwnerDetails()"
+                                                                class="ownersMName input" type="text" id="middleName"
                                                                 placeholder="middleName" />
                                                             <label class="label" for="middleName">
                                                                 Middle Name*
@@ -506,7 +508,8 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="lastName"
+                                                            <input oninput="validateInputsOwnerDetails()"
+                                                                class="ownersLName input" type="text" id="lastName"
                                                                 placeholder="lastName" />
                                                             <label class="label" for="lastName">
                                                                 Last Name*
@@ -569,8 +572,9 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="number" id="mobileNumber"
-                                                                placeholder="mobileNumber" />
+                                                            <input oninput="validateInputsOwnerDetails()"
+                                                                class="input ownersMobileNumber" type="number"
+                                                                id="mobileNumber" placeholder="mobileNumber" />
                                                             <label class="label" for="mobileNumber">
                                                                 Mobile Number*
                                                             </label>
@@ -587,7 +591,8 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="email" id="email"
+                                                            <input oninput="validateInputsOwnerDetails()"
+                                                                class="ownersEmail input" type="email" id="email"
                                                                 placeholder="email" />
                                                             <label class="label" for="email">
                                                                 Email*
@@ -608,9 +613,10 @@
                                                         </svg>
 
                                                         <div class="input-wrapper">
-                                                            <select class="input" aria-label="Select Position"
-                                                                id="principalPosition">
-                                                                <option selected>Select Position</option>
+                                                            <select oninput="validateInputsOwnerDetails()"
+                                                                class="ownersPosition input"
+                                                                aria-label="Select Position" id="principalPosition">
+                                                                <option>Select Position</option>
                                                                 <option value="finance">Finance</option>
                                                                 <option value="humanResources">Human Resources</option>
                                                                 <option value="principal">Principal</option>
@@ -657,7 +663,9 @@
                                                         </svg>
                                                         <!-- Year of Establishment -->
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="number" id="yearOfEstablishment"
+                                                            <input oninput="validateInputsOwnerDetails()"
+                                                                class="ownersYearOfEstablishment input" type="number"
+                                                                id="yearOfEstablishment"
                                                                 placeholder="yearOfEstablishment" />
                                                             <label class="label" for="yearOfEstablishment">
                                                                 Year of Establishment*
@@ -694,8 +702,9 @@
                                                         </svg>
                                                         <!-- Total No. of Students -->
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="number" id="totalStudents"
-                                                                placeholder="totalStudents" />
+                                                            <input oninput="validateInputsOwnerDetails()"
+                                                                class="ownersTotalStudents input" type="number"
+                                                                id="totalStudents" placeholder="totalStudents" />
                                                             <label class="label" for="totalStudents">
                                                                 Total No. of Students*
                                                             </label>
@@ -712,8 +721,9 @@
                                                         </svg>
                                                         <!-- Total No. of Teachers -->
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="number" id="totalTeachers"
-                                                                placeholder="totalTeachers" />
+                                                            <input oninput="validateInputsOwnerDetails()"
+                                                                class=" ownersTotalTeachers input" type="number"
+                                                                id="totalTeachers" placeholder="totalTeachers" />
                                                             <label class="label" for="totalTeachers">
                                                                 Total No. of Teachers*
                                                             </label>
@@ -730,7 +740,8 @@
                                                         </svg>
                                                         <!-- Total No. of Non-Teaching Staff -->
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="number"
+                                                            <input oninput="validateInputsOwnerDetails()"
+                                                                class="ownersTotalNonTeachingStaff input" type="number"
                                                                 id="totalNonTeachingStaff"
                                                                 placeholder="totalNonTeachingStaff" />
                                                             <label class="label" for="totalNonTeachingStaff">
@@ -744,7 +755,8 @@
                                                     <!-- Next Button -->
                                                     <div
                                                         class="mt-4 form-btn-next__container d-flex justify-content-end">
-                                                        <button id="btnNext" class="form-btn-next gap-2"
+                                                        <button disabled id="btnNext"
+                                                            class="btn-owner-details form-btn-next gap-2"
                                                             data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                                             aria-expanded="false" aria-controls="collapseFour">
                                                             <span>Next</span>
@@ -782,7 +794,8 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="firstName"
+                                                            <input oninput="validateInputsManagementDetails()"
+                                                                class="principalFName input" type="text" id="firstName"
                                                                 placeholder="firstName" />
                                                             <label class="label" for="firstName">
                                                                 First Name*
@@ -800,7 +813,8 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="middleName"
+                                                            <input oninput="validateInputsManagementDetails()"
+                                                                class="principalMName input" type="text" id="middleName"
                                                                 placeholder="middleName" />
                                                             <label class="label" for="middleName">
                                                                 Middle Name*
@@ -818,7 +832,8 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="text" id="lastName"
+                                                            <input oninput="validateInputsManagementDetails()"
+                                                                class="principalLName input" type="text" id="lastName"
                                                                 placeholder="lastName" />
                                                             <label class="label" for="lastName">
                                                                 Last Name*
@@ -881,8 +896,9 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="number" id="mobileNumber"
-                                                                placeholder="mobileNumber" />
+                                                            <input oninput="validateInputsManagementDetails()"
+                                                                class="principalMobileNumber input" type="number"
+                                                                id="mobileNumber" placeholder="mobileNumber" />
                                                             <label class="label" for="mobileNumber">
                                                                 Mobile Number*
                                                             </label>
@@ -899,7 +915,8 @@
                                                             </path>
                                                         </svg>
                                                         <div class="input-wrapper">
-                                                            <input class="input" type="email" id="email"
+                                                            <input oninput="validateInputsManagementDetails()"
+                                                                class="principalEmail input" type="email" id="email"
                                                                 placeholder="email" />
                                                             <label class="label" for="email">
                                                                 Email*
@@ -920,8 +937,9 @@
                                                         </svg>
 
                                                         <div class="input-wrapper">
-                                                            <select class="input" aria-label="Select Position"
-                                                                id="position">
+                                                            <select oninput="validateInputsManagementDetails()"
+                                                                class="principalPosition input"
+                                                                aria-label="Select Position" id="position">
                                                                 <option selected>Select Position</option>
                                                                 <option value="finance">Finance</option>
                                                                 <option value="humanResources">Human Resources</option>
@@ -958,7 +976,8 @@
                                                     <!-- Next Button -->
                                                     <div
                                                         class="mt-4 form-btn-next__container d-flex justify-content-end">
-                                                        <button id="btnNext" class="form-btn-next gap-2"
+                                                        <button disabled id="btnNext"
+                                                            class="btn-management-details form-btn-next gap-2"
                                                             data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                                             aria-expanded="false" aria-controls="collapseFive">
                                                             <span>Next</span>
