@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Origami</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg z-10 fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand collapse navbar-collapse">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <img src="/images/logo-sm.png" alt="" class="logo-sm">
+                    </div>
+                    <div class="text-uppercase fs-5 text-white fw-bold">Origami</div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <!-- Nav Items -->
+            <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="text-uppercase nav-link text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#modules" class="text-uppercase nav-link text-white">Modules</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#features" class="text-uppercase nav-link text-white">Features</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#about" class="text-uppercase nav-link text-white">About</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#contact" class="text-uppercase nav-link text-white">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#subscribe" class="text-uppercase nav-link text-white">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="offcanvas offcanvas-start d-block d-lg-none bg-menu" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <img src="/images/logo-sm.png" alt="" class="logo-sm">
+                        </div>
+                        <div class="text-uppercase fs-5 text-white fw-bold">Origami</div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-md-none d-block">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white text-uppercase fs-6" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#modules" class="nav-link text-white text-uppercase fs-6">Modules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link text-white text-uppercase fs-6">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link text-white text-uppercase fs-6">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link text-white text-uppercase fs-6">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#subscribe" class="nav-link text-white text-uppercase fs-6">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contactUs" class="my-5">
+        <div class="container custom-container px-4" class="mt-5">
+            <!-- Header -->
+            <div class="py-5 text-center fw-bold">
+                <h1 class="fs-2 fw-bold">Contact</h1>
+                <p class="fw-light mt-4 fs-6">Any question or remarks? Just write us a message!</p>
+            </div>
+
+            <div class="row bg-white shadow-md p-2 rounded-4">
+                <div class="col-12 col-lg-5 form-card rounded-4 py-5 px-4">
+                    <div class="text-white fs-3">Contact Information</div>
+                    <p class="text-light mt-3 mb-5">Contact us for inquiries and assistance.
+                        We're here to help!</p>
+                    <div class="mt-4">
+                        <div class="mb-4 d-flex align-items-center">
+                            <div class="me-4 d-flex align-items-center">
+                                <svg class="contact-us__icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                    data-testid="PhoneInTalkIcon">
+                                    <path
+                                        d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="text-light">
+                                +63 2 7007 0519
+                            </div>
+                        </div>
+                        <div class="mb-4 d-flex align-items-center">
+                            <div class="me-4 d-flex align-items-center">
+                                <svg class="contact-us__icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                    data-testid="PhoneIphoneIcon">
+                                    <path
+                                        d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="text-light">
+                                +63 919 221 7503
+                            </div>
+                        </div>
+                        <div class="mb-4 d-flex align-items-center">
+                            <div class="me-4 d-flex align-items-center">
+                                <svg class="contact-us__icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                    data-testid="EmailIcon">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="text-light">
+                                info@affirm-technology.com
+                            </div>
+                        </div>
+                        <div class="mb-4 d-flex align-items-center">
+                            <div class="me-4 d-flex align-items-center">
+                                <svg class="contact-us__icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                    data-testid="LocationOnIcon">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="text-light">
+                                7th Armstrong Corporate Center 134 H.V. Dela Costa St. Bel-Air Makati City
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex gap-3 mt-5">
+                        <a href="#" class="footer-icon d-flex justify-content-center align-content-center">
+                            <i class="fa-brands fa-instagram fs-5"></i>
+                        </a>
+                        <a href="#" class="footer-icon">
+                            <i class="fa-brands fa-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="footer-icon">
+                            <i class="fa-brands fa-twitter fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 mt-5 mt-lg-2 px-5">
+                    <div>
+                        <h1 class="fs-5 py-2 text-center mb-4">General Inquiry</h1>
+                    </div>
+                    <!-- Form -->
+                    <form action="#">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <!-- First Name -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="AccountCircleIcon">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <input required class="input" type="text" id="firstName"
+                                            placeholder="firstName" />
+                                        <label class="label fs-6" for="firstName">
+                                            First Name*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Last Name -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="AccountCircleIcon">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <input required class="input" type="text" id="lastName"
+                                            placeholder="lastName" />
+                                        <label class="label fs-6" for="lastName">
+                                            Last Name*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <!-- Position -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="AssignmentIndIcon">
+                                        <path
+                                            d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V19z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <input required class="input" type="text" id="position"
+                                            placeholder="position" />
+                                        <label class="label fs-6" for="position">
+                                            Position*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- School Name -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="SchoolIcon">
+                                        <path
+                                            d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <input required class="input" type="text" id="schoolName"
+                                            placeholder="schoolName" />
+                                        <label class="label fs-6" for="schoolName">
+                                            School Name*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1">
+                            <!-- Complete Address -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="LocationOnIcon">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <input required class="input" type="text" id="address" placeholder="address" />
+                                        <label class="label fs-6" for="address">
+                                            Complete Address*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <!-- Landline -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="PhoneIcon">
+                                        <path
+                                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <input required class="input" type="number" id="landline"
+                                            placeholder="landline" />
+                                        <label class="label fs-6" for="landline">
+                                            Landline*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="PhoneIphoneIcon">
+                                        <path
+                                            d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <input required class="input" type="number" id="mobile" placeholder="mobile" />
+                                        <label class="label fs-6" for="mobile">
+                                            Mobile*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1">
+                            <!-- Email -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="EmailIcon">
+                                        <path
+                                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <input required class="input" type="email" id="email" placeholder="email" />
+                                        <label class="label fs-6" for="email">
+                                            Email*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 row-cols-1 row-cols-md-2">
+                            <!-- Select Demo -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="OndemandVideoIcon">
+                                        <path
+                                            d="M21 3H3c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.11-.9-2-2-2zm0 14H3V5h18v12zm-5-6-7 4V7z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <select required class="selectDemo input" aria-label="Select Demo" id="demo">
+                                            <option value="" disabled selected>Select Demo</option>
+                                            <option value="onsite">Onsite Demo</option>
+                                            <option value="online">Online Demo</option>
+                                        </select>
+                                        <label class="label" for="demo">
+                                            Select Demo
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Schedule Date of Demo -->
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <div class="input-wrapper">
+                                        <div class="input-wrapper">
+                                            <input required class="input" type="datetime-local" id=" dateOfDemo"
+                                                placeholder="dateOfDemo" />
+                                            <label class="label fs-6" for="dateOfDemo">
+                                                Schedule Date of Demo*
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Message -->
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <div class="d-flex gap-2 mb-4">
+                                    <svg class="input-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                        data-testid="ChatIcon">
+                                        <path
+                                            d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z">
+                                        </path>
+                                    </svg>
+                                    <div class="input-wrapper">
+                                        <textarea required name="message" class="input" type="text-area" id="message"
+                                            placeholder="message"></textarea>
+                                        <label class="label fs-6" for="message">
+                                            Message*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="d-flex justify-content-end pb-4">
+                            <button type="submit" class="contactUsBtn gap-2 form-btn-next">
+                                <span>Submit</span>
+                                <svg class="icon-submit" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                    data-testid="SendIcon">
+                                    <path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container custom-container py-5">
+            <div class="text-center text-white pb-5">
+                <h1 class="footer-heading">Start your ERP journey today.</h1>
+                <p class="footer-paragraph">Experience Origami's 99% customer support satisfaction shared by thousands
+                    of users.</p>
+                <div class="mt-5 d-flex gap-3 justify-content-center">
+                    <a href="#" class="contact-us-btn-outline">Request Demo</a>
+                    <a href="#" class="contact-us-btn">Subscribe Now</a>
+                </div>
+
+            </div>
+
+            <div class="row row-cols-2 row-cols-lg-4 row-gap-5 row-gap-lg-0 mt-5 border-bottom pb-5">
+                <div class="col">
+                    <h1 class="mb-4 text-uppercase fw-bolder text-white fs-6">Powered By</h1>
+                    <div class="">
+                        <img src="/images/affirm-logo-svg.png" alt="" class="w-50">
+                    </div>
+                </div>
+                <div class="col">
+                    <h1 class="mb-4 text-uppercase fw-bolder text-white fs-6">Navigation</h1>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="footer-link">Home</a>
+                        <a href="#" class="footer-link">Modules</a>
+                        <a href="#" class="footer-link">Features</a>
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Subscribe</a>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <h1 class="mb-4 text-uppercase fw-bolder text-white fs-6">Legal</h1>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="footer-link">General Info</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h1 class="mb-4 text-uppercase fw-bolder text-white fs-6">Talk to us</h1>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="footer-text">+63 2 7007 0519</div>
+                        <div class="footer-text">+63 919 221 7503</div>
+                        <div class="footer-text">info@affirm-technology.com</div>
+                        <div class="footer-text">7th Armstrong Corporate Center 134 H.V.</div>
+                        <div class="footer-text">Dela Costa St. Bel-Air Makati City</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-5 d-flex flex-column gap-4 flex-lg-row gap-lg-0 justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <img src="/images/logo-sm.png" alt="" class="logo">
+                    </div>
+                    <div class="text-uppercase fs-5 text-white fw-bold">Origami</div>
+                </div>
+                <div class="footer-text">© 2023 Affirm Technology. All Rights Reserved.</div>
+                <div class="d-flex gap-3">
+                    <a href="#" class="footer-icon d-flex justify-content-center align-content-center">
+                        <i class="fa-brands fa-instagram fs-5"></i>
+                    </a>
+                    <a href="#" class="footer-icon">
+                        <i class="fa-brands fa-facebook fs-5"></i>
+                    </a>
+                    <a href="#" class="footer-icon">
+                        <i class="fa-brands fa-twitter fs-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
